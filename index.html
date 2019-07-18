@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dice Simulator</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Cormorant+Unicase&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <h1>Dice Game</h1>
+        <h2>Beat the house and win your bet!</h2>
+        <hr>
+        <table align="center">
+            <tr>
+                <td>Funds: $<span id="funds">5000</span></td>
+                <td>
+                    Bet:<input id="bet-input" type="number"><button     id="play-btn">PLAY</button>
+                    <p><button id=play5times> PLAY 5 TIMES</button></p>
+                    <p> <button id="reset-btn"> RESET</button></p>  
+                </td> 
+                
+            </tr>
+            <tr>
+                
+                <td>
+                    <p>House Roll</p>
+                    <img id="house-die" src="images/question-mark.png">
+                </td>
+                <td>
+                    <p>Your Roll</p>
+                    <img id="player-die" src="images/question-mark.png">
+                </td>
+            </tr>
+        </table>
+
+       
+
+        <button id="purchase-btn">Buy Riches & Luxury</button>
+
+        <p id="fundsLowNote"> <strong> + </strong> </p>
+
+        <h2>Your Loot</h2>
+
+        <p class="itemsCount">
+            <strong>ITEMS ➜ 
+                Total Items: <span id="total">0</span> |
+                Socks: <span id="socks">0</span> |
+                Bikes: <span id="bikes">0</span> |
+                Rings: <span id="rings">0</span> |
+                Trips: <span id="trips">0</span> |
+                Motorcycles: <span id="motorcycles">0</span> |
+                Cars: <span id="cars">0</span> |
+                Boats: <span id="boats">0</span> |
+                Houses: <span id="houses">0</span> 
+            </strong>
+        </p>
+
+        <p id="loot"></p>
+    <script src="main.js"></script>
+    </body>
+</html>
